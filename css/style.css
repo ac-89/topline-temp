@@ -1035,6 +1035,7 @@ p.meta-data {
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .slides:after {
   content: ".";
@@ -1629,8 +1630,7 @@ body.boxed .is-sticky .main-navigation {
 .main-navigation .container {
   position: relative;
 }
-.is-sticky .main-navigation {
-}
+
 .main-navigation .social-icons li,
 .topbar .social-icons li {
   margin-left: 20px;
@@ -2031,8 +2031,7 @@ form .quote-head-btn {
   padding-top: 8px;
   color: #999;
 }
-.connected-blocks h4 {
-}
+
 .stacked-title {
   border-radius: 0 0 4px 4px;
   color: #fff;
@@ -2199,8 +2198,7 @@ form .quote-head-btn {
 .site-footer .social-icons-rounded a:hover {
   color: #fff;
 }
-.testimonial-block {
-}
+
 .testimonial-block blockquote {
   border-bottom: 1px solid #eee;
   border-left: 0;
@@ -3931,4 +3929,12 @@ form .quote-head-btn {
 
 .logo-img {
   max-width: 80%;
+}
+
+.flex-slide-1 {
+  background-image: url(../images/IMG-20240814-WA0011.jpg);
+}
+
+.flex-slide-2 {
+  background-image: url(../images/IMG-20240814-WA0023.jpg);
 }

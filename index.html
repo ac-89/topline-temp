@@ -19,15 +19,20 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- CSS
   ================================================== -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> -->
+    <!-- <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/styles.pure.css" rel="stylesheet" type="text/css" />
+    <!-- <link
       href="vendor/magnific/magnific-popup.css"
       rel="stylesheet"
       type="text/css"
-    />
-    <link
+    /> -->
+    <!-- <link
       href="vendor/owl-carousel/css/owl.carousel.css"
       rel="stylesheet"
       type="text/css"
@@ -36,14 +41,14 @@
       href="vendor/owl-carousel/css/owl.theme.css"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
     <!--[if lte IE 9
       ]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"
     /><![endif]-->
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/custom.css" rel="stylesheet" type="text/css" /> -->
     <!-- CUSTOM STYLESHEET FOR STYLING -->
     <!-- Color Style -->
-    <link href="colors/color1.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="colors/color1.css" rel="stylesheet" type="text/css" /> -->
     <!-- SCRIPTS
   ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -90,7 +95,11 @@
                   <span class="icon-col"><i class="fa fa-phone"></i></span>
                   <div>
                     <div>
-                      <span><a href="tel:0871634915"><strong>Call us</strong><br />087 163 4915</a></span>
+                      <span
+                        ><a href="tel:0871634915"
+                          ><strong>Call us</strong><br />087 163 4915</a
+                        ></span
+                      >
                     </div>
                   </div>
                 </li>
@@ -122,7 +131,6 @@
                   ><i class="fa fa-facebook-f"></i
                 ></a>
               </li>
-            
             </ul>
             <a href="#" id="menu-toggle">Menu</a>
             <nav role="menu">
@@ -132,16 +140,12 @@
                 </li>
                 <li>
                   <a href="#about">About</a>
-                  </li>
-                    <li><a href="#contact">Book a Service</a></li>
-               
                 </li>
+                <li><a href="#contact">Book a Service</a></li>
                 <li>
                   <a href="#services">Services</a>
-                 
                 </li>
-             
-              
+
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
@@ -160,10 +164,7 @@
           data-pause="yes"
         >
           <ul class="slides">
-            <li
-              class="parallax"
-              style="background-image: url(images/IMG-20240814-WA0011.jpg)"
-            >
+            <li class="parallax flex-slide-1">
               <div class="flex-caption text-align-center">
                 <div class="container">
                   <div class="flex-caption-table">
@@ -182,10 +183,7 @@
                 </div>
               </div>
             </li>
-            <li
-              class="parallax"
-              style="background-image: url(images/IMG-20240814-WA0023.jpg)"
-            >
+            <li class="parallax flex-slide-2">
               <div class="flex-caption text-align-center">
                 <div class="container">
                   <div class="flex-caption-table">
@@ -221,12 +219,11 @@
             action="mail/quote.php"
           >
             <div class="row">
-              
               <div class="col-md-3 col-sm-6">
                 <a
                   href="#bcontact"
                   class="btn btn-primary btn-block quote-head-btn"
-                  >Book a service</a
+                  >Email Now</a
                 >
               </div>
               <div class="col-md-3 col-sm-6">
@@ -236,13 +233,12 @@
                   >Call Now</a
                 >
               </div>
-              </div>
-            </form>
             </div>
-            <div id="Quote-message" class="accent-color"></div>
-           
+          </form>
         </div>
+        <div id="Quote-message" class="accent-color"></div>
       </div>
+
       <!-- Main Content -->
       <div id="main-container">
         <div class="content">
@@ -250,35 +246,45 @@
             <div class="container" id="about">
               <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-10 text-align-center ">
-                  <h1 >Topline Paving and Landscapes</h1>
+                <div class="col-md-10 text-align-center">
+                  <h1>Topline Paving and Landscapes</h1>
                   <p>
                     <strong>Paving, Landscaping &amp; Fencing</strong>
                   </p>
                   <div class="main-box-parent">
-                  <div class="main-box">
-                  
+                    <div class="main-box">
                       <img src="images/quality.png" alt="" />
-                   
-                    <p class="main-p-right">
-                    At Topline Paving and Landscapes, we specialize in transforming outdoor spaces across Dublin with top-tier craftsmanship and attention to detail. Our comprehensive services cover everything from designing and installing driveways, patios, and pathways, to fencing, brickwork, and lawn care. 
-                    </p>
-                  </div>
-                  <div class="main-box">
-                    <p class="main-p-left">
-                     Whether you need durable surfaces with concrete and tarmac, lush greenery with turfing and artificial grass, or professional cleaning and sealing to maintain your property, our experienced team is dedicated to delivering exceptional results. Trust us to enhance your home's exterior with solutions that combine beauty, functionality, and lasting quality.
-                    </p>
-                    <img src="images/IMG-20240814-WA0035-cropped.png" alt="">
-                  </div>
+
+                      <p class="main-p-right">
+                        At Topline Paving and Landscapes, we specialize in
+                        transforming outdoor spaces across Dublin with top-tier
+                        craftsmanship and attention to detail. Our comprehensive
+                        services cover everything from designing and installing
+                        driveways, patios, and pathways, to fencing, brickwork,
+                        and lawn care.
+                      </p>
+                    </div>
+                    <div class="main-box">
+                      <p class="main-p-left">
+                        Whether you need durable surfaces with concrete and
+                        tarmac, lush greenery with turfing and artificial grass,
+                        or professional cleaning and sealing to maintain your
+                        property, our experienced team is dedicated to
+                        delivering exceptional results. Trust us to enhance your
+                        home's exterior with solutions that combine beauty,
+                        functionality, and lasting quality.
+                      </p>
+                      <img
+                        src="images/IMG-20240814-WA0035-cropped.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                   <a href="#contact" class="btn btn-default">Contact Us</a>
                 </div>
-                
+
                 <div class="spacer-40 visible-xs"></div>
-                <div class="col-md-6 col-sm-6">
-                    
-                    
-                </div>
+                <div class="col-md-6 col-sm-6"></div>
               </div>
             </div>
             <div class="spacer-60"></div>
@@ -356,14 +362,9 @@
                 >
                   <li class="item">
                     <div class="service-grid-item grid-item format-standard">
-                        <img
-                          src="images/driveway.jpg"
-                          alt=""
-                      />
+                      <img src="images/driveway.jpg" alt="" loading="lazy" />
                       <div class="grid-item-inner">
-                        <h4>
-                          Driveways, Paths, and Block Paving
-                        </h4>
+                        <h4>Driveways, Paths, and Block Paving</h4>
                         <p>
                           Enhance your property's entrance and walkways with our
                           expertly designed driveways, paths, and block paving
@@ -371,22 +372,14 @@
                           not only boost curb appeal but also provide practical
                           and long-lasting functionality for any property.
                         </p>
-                        
                       </div>
                     </div>
                   </li>
                   <li class="item">
                     <div class="service-grid-item grid-item format-standard">
-                      
-                        <img
-                          src="images/patio2.jpg"
-                          alt=""
-                      />
+                      <img src="images/patio2.jpg" alt="" loading="lazy" />
                       <div class="grid-item-inner">
-                        <h4>
-                         
-                            Patios, Slabs and Natural Stone Products
-                        </h4>
+                        <h4>Patios, Slabs and Natural Stone Products</h4>
                         <p>
                           Enjoy outdoor living at its finest with our
                           beautifully crafted patios and premium slabs and
@@ -395,21 +388,14 @@
                           space, our designs offer timeless beauty and
                           durability tailored to your taste.
                         </p>
-                       
                       </div>
                     </div>
                   </li>
                   <li class="item">
                     <div class="service-grid-item grid-item format-standard">
-                      <img
-                          src="images/fencing.jpg"
-                          alt=""
-                      />
+                      <img src="images/fencing.jpg" alt="" loading="lazy" />
                       <div class="grid-item-inner">
-                        <h4>
-                        
-                            Fencing and Brickwork and Repairs
-                        </h4>
+                        <h4>Fencing and Brickwork and Repairs</h4>
                         <p>
                           Secure and beautify your property with our quality
                           fencing and expert brickwork services. From new
@@ -417,20 +403,14 @@
                           every detail contributes to a flawless and enduring
                           finish that complements your home.
                         </p>
-                      
                       </div>
                     </div>
                   </li>
                   <li class="item">
                     <div class="service-grid-item grid-item format-standard">
-                      <img
-                          src="images/grass.jpg"
-                          alt=""
-                      />
+                      <img src="images/grass.jpg" alt="" loading="lazy" />
                       <div class="grid-item-inner">
-                        <h4>
-                          Turfing and Artificial Grass
-                        </h4>
+                        <h4>Turfing and Artificial Grass</h4>
                         <p>
                           Achieve the perfect lawn with our professional turfing
                           services or opt for a maintenance-free solution with
@@ -438,20 +418,14 @@
                           synthetic, we provide lush, green spaces that stay
                           vibrant year-round, tailored to suit any garden.
                         </p>
-                        
                       </div>
                     </div>
                   </li>
                   <li class="item">
                     <div class="service-grid-item grid-item format-standard">
-                      <img
-                          src="images/concrete.jpg"
-                          alt=""
-                      />
+                      <img src="images/concrete.jpg" alt="" loading="lazy" />
                       <div class="grid-item-inner">
-                        <h4>
-                          Concrete and Tarmac
-                        </h4>
+                        <h4>Concrete and Tarmac</h4>
                         <p>
                           For strong, versatile, and low-maintenance surfaces,
                           our concrete and tarmac services are the ideal choice.
@@ -459,20 +433,14 @@
                           areas, we deliver smooth, hard-wearing finishes that
                           combine durability with aesthetic appeal.
                         </p>
-                       
                       </div>
                     </div>
                   </li>
                   <li class="item">
                     <div class="service-grid-item grid-item format-standard">
-                     <img
-                          src="images/clean2.jpg"
-                          alt=""
-                      />
+                      <img src="images/clean2.jpg" alt="" loading="lazy" />
                       <div class="grid-item-inner">
-                        <h4>
-                         Cleaning and Sealing
-                        </h4>
+                        <h4>Cleaning and Sealing</h4>
                         <p>
                           Keep your outdoor spaces looking their best with our
                           comprehensive cleaning and sealing services. We
@@ -480,7 +448,6 @@
                           roofs, ensuring they remain pristine, durable, and
                           weather-resistant for years to come.
                         </p>
-                        
                       </div>
                     </div>
                   </li>
@@ -774,35 +741,65 @@
             </div> -->
           </div>
           <div class="content padding-b0">
-          <div class="container" id="contact">
-            <div class="row text-align-center">
-              <div class="col-md-1"></div>
-                <div class="col-md-10  mx-auto">
-                    <h3>Just fill out this quick form</h3>
-                <p>We would be delighted to serve you with our services, just use the form below or choose the services you are interested in and we will be in touch with you.</p>
+            <div class="container" id="contact">
+              <div class="row text-align-center">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 mx-auto">
+                  <h3>Just fill out this quick form</h3>
+                  <p>
+                    We would be delighted to serve you with our services, just
+                    use the form below or choose the services you are interested
+                    in and we will be in touch with you.
+                  </p>
                   <div class="spacer-20"></div>
-                      <form method="post" id="book-service-form" name="book-service-form" class="book-service-form clearfix" action="mail/book-service.php">
-                          <div class="row">
-                              <div class="col-md-6 col-sm-6">
-                                  <label>Your Name (required)</label>
-                                  <input type="text" name="service-name" id="service-name" class="form-control input-lg">
-                              </div>
-                              <div class="col-md-6 col-sm-6">
-                                  <label>Your Email</label>
-                                  <input type="email" name="service-email" id="service-email" class="form-control input-lg">
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-md-6 col-sm-6">
-                                  <label>Your Phone (required)</label>
-                                  <input type="text" name="service-phone" id="service-phone" class="form-control input-lg">
-                              </div>
-                              <div class="col-md-6 col-sm-6">
-                                  <label>Your Address (required)</label>
-                                  <input type="text" name="service-address" id="service-address" class="form-control input-lg">
-                              </div>
-                          </div>
-                          <!-- <div class="row">
+                  <form
+                    method="post"
+                    id="book-service-form"
+                    name="book-service-form"
+                    class="book-service-form clearfix"
+                    action="mail/book-service.php"
+                  >
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <label>Your Name (required)</label>
+                        <input
+                          type="text"
+                          name="service-name"
+                          id="service-name"
+                          class="form-control input-lg"
+                        />
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <label>Your Email</label>
+                        <input
+                          type="email"
+                          name="service-email"
+                          id="service-email"
+                          class="form-control input-lg"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <label>Your Phone (required)</label>
+                        <input
+                          type="text"
+                          name="service-phone"
+                          id="service-phone"
+                          class="form-control input-lg"
+                        />
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <label>Your Address (required)</label>
+                        <input
+                          type="text"
+                          name="service-address"
+                          id="service-address"
+                          class="form-control input-lg"
+                        />
+                      </div>
+                    </div>
+                    <!-- <div class="row">
                               <div class="col-md-6 col-sm-6">
                                   <label>Date for service (required)</label>
                                   <input type="text" name="service-date" id="service-date" class="form-control input-lg">
@@ -812,9 +809,9 @@
                                   <input type="text" name="service-time" id="service-time" class="form-control input-lg">
                               </div>
                           </div> -->
-                          <div class="row">
-                              <div class="col-md-12">
-                                  <!-- <label>Choose services (required)</label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <!-- <label>Choose services (required)</label>
                                   <select name="service-type" id="service-type" class="form-control input-lg selectpicker">
                                       <option>Fall and Spring Cleanup</option>
                                       <option>Lawn Care</option>
@@ -823,18 +820,30 @@
                                       <option>Tree, Shrub, Turf</option>
                                       <option>Gutter Cleaning</option>
                                   </select> -->
-                                  <label>Details</label>
-                                  <textarea name="service-comments" id="service-comments" class="form-control input-lg" rows="6"></textarea>
-                                  
-                                  <button type="submit" id="service-submit" name="service-submit" class="btn btn-primary btn-lg margin-20">Submit</button>
-                              </div>
-                          </div>
-                       </form>
-                      <div class="clearfix"></div>
-                      <div id="service-message"></div>
-                  </div>
-                  <div class="spacer-30 visible-xs"></div>
-                  <!-- <div class="col-md-4 col-sm-5">
+                        <label>Details</label>
+                        <textarea
+                          name="service-comments"
+                          id="service-comments"
+                          class="form-control input-lg"
+                          rows="6"
+                        ></textarea>
+
+                        <button
+                          type="submit"
+                          id="service-submit"
+                          name="service-submit"
+                          class="btn btn-primary btn-lg margin-20"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="clearfix"></div>
+                  <div id="service-message"></div>
+                </div>
+                <div class="spacer-30 visible-xs"></div>
+                <!-- <div class="col-md-4 col-sm-5">
                     <h3>How it works</h3>
                       <div class="connected-blocks">
                           <span class="icon"><i class="fa fa-send"></i></span>
@@ -858,8 +867,8 @@
                       </div>
                   </div> -->
               </div>
-              </div>
             </div>
+          </div>
         </div>
       </div>
       <!-- Site Footer -->
@@ -871,9 +880,19 @@
                 <h4 class="widgettitle">
                   <i class="fa fa-info-circle"></i> About Topline
                 </h4>
-                <p><img src="images/logo-trans.png" alt="" class="logo-img"/></p>
                 <p>
-                  With a commitment to excellence and a passion for transforming outdoor spaces, Topline Paving and Landscapes offer a comprehensive range of services, including driveways, patios, fencing, turfing, and more. 
+                  <img
+                    src="images/logo-trans.png"
+                    alt=""
+                    class="logo-img"
+                    loading="lazy"
+                  />
+                </p>
+                <p>
+                  With a commitment to excellence and a passion for transforming
+                  outdoor spaces, Topline Paving and Landscapes offer a
+                  comprehensive range of services, including driveways, patios,
+                  fencing, turfing, and more.
                 </p>
               </div>
             </div>
@@ -898,7 +917,28 @@
                 <h4 class="widgettitle">
                   <i class="fa fa-facebook"></i> We are on Facebook
                 </h4>
-                <div class="fb-widget" data-tweets-count="2"><div class="fb-page" data-href="https://www.facebook.com/toplinepaving21" data-tabs="timeline" data-width="" data-height="250" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/toplinepaving21" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/toplinepaving21">Topline paving and landscapes</a></blockquote></div></div>
+                <div class="fb-widget" data-tweets-count="2">
+                  <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/toplinepaving21"
+                    data-tabs="timeline"
+                    data-width=""
+                    data-height="250"
+                    data-small-header="true"
+                    data-adapt-container-width="true"
+                    data-hide-cover="true"
+                    data-show-facepile="true"
+                  >
+                    <blockquote
+                      cite="https://www.facebook.com/toplinepaving21"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      <a href="https://www.facebook.com/toplinepaving21"
+                        >Topline paving and landscapes</a
+                      >
+                    </blockquote>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -925,7 +965,13 @@
                         <div class="testimonial-block">
                           <blockquote>
                             <p>
-                              I just want to thank Pat and his team for my beautiful new garden. I am absolutely over the moon with it - I love it! I can't recommend these lads enough honestly! Their hard work is second to none and really went above and beyond to transform my garden. Well done lads and wish you all the best!
+                              I just want to thank Pat and his team for my
+                              beautiful new garden. I am absolutely over the
+                              moon with it - I love it! I can't recommend these
+                              lads enough honestly! Their hard work is second to
+                              none and really went above and beyond to transform
+                              my garden. Well done lads and wish you all the
+                              best!
                             </p>
                           </blockquote>
                           <div class="testimonial-avatar">
@@ -934,6 +980,7 @@
                               alt=""
                               height="60"
                               width="60"
+                              loading="lazy"
                             />
                           </div>
                           <div class="testimonial-info">
@@ -947,7 +994,11 @@
                         <div class="testimonial-block">
                           <blockquote>
                             <p>
-                            Thank you Pat and Lads for the amazing job on my bk garden, highly recommended this crew they went above and beyond, outstanding work and finished job is fabulous 🥳 ill have great days & evenings in my garden now
+                              Thank you Pat and Lads for the amazing job on my
+                              bk garden, highly recommended this crew they went
+                              above and beyond, outstanding work and finished
+                              job is fabulous 🥳 ill have great days \& evenings
+                              in my garden now
                             </p>
                           </blockquote>
                           <div class="testimonial-avatar">
@@ -956,6 +1007,7 @@
                               alt=""
                               height="60"
                               width="60"
+                              loading="lazy"
                             />
                           </div>
                           <div class="testimonial-info">
@@ -980,7 +1032,9 @@
           <div class="row">
             <div class="col-md-6 col-sm-6">
               <div class="copyrights-col-left">
-                <p>&copy; 2024 Topline Landscapes and Paving. All Rights Reserved</p>
+                <p>
+                  &copy; 2024 Topline Landscapes and Paving. All Rights Reserved
+                </p>
               </div>
             </div>
             <div class="col-md-6 col-sm-6">
@@ -991,7 +1045,6 @@
                   <li class="facebook">
                     <a href="#"><i class="fa fa-facebook-f"></i></a>
                   </li>
-                  
                 </ul>
               </div>
             </div>
@@ -1012,10 +1065,14 @@
     <!-- Owl Carousel -->
     <script src="js/bootstrap.js"></script>
     <!-- UI -->
-    <script src="js/init.js"></script>
+    <script async rel="preload" src="js/init.js"></script>
     <!-- All Scripts -->
-    <script src="vendor/flexslider/js/jquery.flexslider.js"></script>
+    <script
+      async
+      rel="preload"
+      src="vendor/flexslider/js/jquery.flexslider.js"
+    ></script>
     <!-- FlexSlider -->
-     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="J7S25LGN"></script>
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="J7S25LGN" rel="preload"></script> -->
   </body>
 </html>
