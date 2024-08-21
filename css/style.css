@@ -9,8 +9,8 @@ Author:	imithemes
 @import url("font-awesome.css");
 @import url("line-icons.css");
 @import url("animations.css");
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
 
 /*------------------------------------------------------------------
@@ -3885,4 +3885,31 @@ form .quote-head-btn {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+}
+
+.main-box-parent {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.main-box img {
+  width: 50%;
+}
+
+.main-p-right {
+  text-align: left;
+}
+
+.main-p-left {
+  text-align: right;
 }
