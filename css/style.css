@@ -3489,8 +3489,28 @@ form .quote-head-btn {
    7. Responsive Media Queries
 ================================================== */
 @media (min-width: 1200px) {
+  .main-box img {
+    width: 50%;
+  }
+  .main-p-right {
+    text-align: left;
+  }
+
+  .main-p-left {
+    text-align: right;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .main-box img {
+    width: 50%;
+  }
+  .main-p-right {
+    text-align: left;
+  }
+
+  .main-p-left {
+    text-align: right;
+  }
   .site-header .container,
   .main-navigation .container,
   .quote-teaser .container,
@@ -3731,6 +3751,13 @@ form .quote-head-btn {
     margin-bottom: 0;
     margin-top: 40px;
   }
+  .main-box {
+    flex-direction: column;
+  }
+
+  .main-box img {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   /* Isotope */
@@ -3896,20 +3923,12 @@ form .quote-head-btn {
 
 .main-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 10px;
 }
 
-.main-box img {
-  width: 50%;
-}
-
-.main-p-right {
-  text-align: left;
-}
-
-.main-p-left {
-  text-align: right;
+.logo-img {
+  max-width: 80%;
 }
