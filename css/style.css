@@ -740,7 +740,7 @@ body {
   width: 300px;
   z-index: 2;
   float: left;
-  padding: 12px 50px 12px 0;
+  padding: 0 50px 12px 0;
 }
 .header-style3 .site-logo {
   padding-top: 22px;
