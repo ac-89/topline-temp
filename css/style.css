@@ -1858,10 +1858,10 @@ form .quote-head-btn {
     width: 50%;
   }
   .main-p-right {
-    text-align: left;
+    text-align: right;
   }
   .main-p-left {
-    text-align: right;
+    text-align: left;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2163,6 +2163,7 @@ form .quote-head-btn {
 }
 .main-box {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
