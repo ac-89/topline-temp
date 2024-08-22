@@ -6,44 +6,44 @@ jQuery(function ($) {
   /* ==================================================
 	Contact Form Validations
 ================================================== */
-  GREENSKEEPER.ContactForm = function () {
-    $(".contact-form").each(function () {
-      var formInstance = $(this);
-      formInstance.submit(function () {
-        var action = $(this).attr("action");
+  // GREENSKEEPER.ContactForm = function () {
+  //   $(".contact-form").each(function () {
+  //     var formInstance = $(this);
+  //     formInstance.submit(function () {
+  //       var action = $(this).attr("action");
 
-        $("#message").slideUp(750, function () {
-          $("#message").hide();
+  //       $("#message").slideUp(750, function () {
+  //         $("#message").hide();
 
-          $("#submit")
-            .after('<img src="images/assets/ajax-loader.gif" class="loader" />')
-            .attr("disabled", "disabled");
+  //         $("#submit")
+  //           .after('<img src="images/assets/ajax-loader.gif" class="loader" />')
+  //           .attr("disabled", "disabled");
 
-          $.post(
-            action,
-            {
-              name: $("#name").val(),
-              email: $("#email").val(),
-              phone: $("#phone").val(),
-              address: $("#address").val(),
-              comments: $("#comments").val(),
-            },
-            function (data) {
-              document.getElementById("message").innerHTML = data;
-              $("#message").slideDown("slow");
-              $(".contact-form img.loader").fadeOut("slow", function () {
-                $(this).remove();
-              });
-              $("#submit").removeAttr("disabled");
-              if (data.match("success") != null)
-                $(".contact-form").slideUp("slow");
-            }
-          );
-        });
-        return false;
-      });
-    });
-  };
+  //         $.post(
+  //           action,
+  //           {
+  //             name: $("#name").val(),
+  //             email: $("#email").val(),
+  //             phone: $("#phone").val(),
+  //             address: $("#address").val(),
+  //             comments: $("#comments").val(),
+  //           },
+  //           function (data) {
+  //             document.getElementById("message").innerHTML = data;
+  //             $("#message").slideDown("slow");
+  //             $(".contact-form img.loader").fadeOut("slow", function () {
+  //               $(this).remove();
+  //             });
+  //             $("#submit").removeAttr("disabled");
+  //             if (data.match("success") != null)
+  //               $(".contact-form").slideUp("slow");
+  //           }
+  //         );
+  //       });
+  //       return false;
+  //     });
+  //   });
+  // };
   /* ==================================================
 	Quote Form Validations
 ================================================== */
