@@ -630,7 +630,7 @@ jQuery(function ($) {
    Init Functions
 ================================================== */
   $(document).ready(function () {
-    GREENSKEEPER.ContactForm();
+    // GREENSKEEPER.ContactForm();
     GREENSKEEPER.QuickQuoteForm();
     GREENSKEEPER.BookServiceForm();
     GREENSKEEPER.AskQuestionForm();
