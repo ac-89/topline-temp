@@ -88,47 +88,47 @@ jQuery(function ($) {
   /* ==================================================
 	Book Service Form Validations
 ================================================== */
-  GREENSKEEPER.BookServiceForm = function () {
-    $(".book-service-form").each(function () {
-      var formInstance = $(this);
-      formInstance.submit(function () {
-        var action = $(this).attr("action");
+  // GREENSKEEPER.BookServiceForm = function () {
+  //   $(".book-service-form").each(function () {
+  //     var formInstance = $(this);
+  //     formInstance.submit(function () {
+  //       var action = $(this).attr("action");
 
-        $("#service-message").slideUp(750, function () {
-          $("#service-message").hide();
+  //       $("#service-message").slideUp(750, function () {
+  //         $("#service-message").hide();
 
-          $("#service-submit")
-            .after('<img src="images/assets/ajax-loader.gif" class="loader" />')
-            .attr("disabled", "disabled");
+  //         $("#service-submit")
+  //           .after('<img src="images/assets/ajax-loader.gif" class="loader" />')
+  //           .attr("disabled", "disabled");
 
-          $.post(
-            action,
-            {
-              service_name: $("#service-name").val(),
-              service_email: $("#service-email").val(),
-              service_phone: $("#service-phone").val(),
-              service_address: $("#service-address").val(),
-              service_date: $("#service-date").val(),
-              service_time: $("#service-time").val(),
-              service_type: $("#service-type").val(),
-              service_comments: $("#service-comments").val(),
-            },
-            function (data) {
-              document.getElementById("service-message").innerHTML = data;
-              $("#service-message").slideDown("slow");
-              $(".book-service-form img.loader").fadeOut("slow", function () {
-                $(this).remove();
-              });
-              $("#service-submit").removeAttr("disabled");
-              if (data.match("success") !== null)
-                $(".book-service-form").slideUp("slow");
-            }
-          );
-        });
-        return false;
-      });
-    });
-  };
+  //         $.post(
+  //           action,
+  //           {
+  //             service_name: $("#service-name").val(),
+  //             service_email: $("#service-email").val(),
+  //             service_phone: $("#service-phone").val(),
+  //             service_address: $("#service-address").val(),
+  //             service_date: $("#service-date").val(),
+  //             service_time: $("#service-time").val(),
+  //             service_type: $("#service-type").val(),
+  //             service_comments: $("#service-comments").val(),
+  //           },
+  //           function (data) {
+  //             document.getElementById("service-message").innerHTML = data;
+  //             $("#service-message").slideDown("slow");
+  //             $(".book-service-form img.loader").fadeOut("slow", function () {
+  //               $(this).remove();
+  //             });
+  //             $("#service-submit").removeAttr("disabled");
+  //             if (data.match("success") !== null)
+  //               $(".book-service-form").slideUp("slow");
+  //           }
+  //         );
+  //       });
+  //       return false;
+  //     });
+  //   });
+  // };
   /* ==================================================
 	Ask Question Form Validations
 ================================================== */
@@ -631,8 +631,8 @@ jQuery(function ($) {
 ================================================== */
   $(document).ready(function () {
     // GREENSKEEPER.ContactForm();
-    GREENSKEEPER.QuickQuoteForm();
-    GREENSKEEPER.BookServiceForm();
+    // GREENSKEEPER.QuickQuoteForm();
+    // GREENSKEEPER.BookServiceForm();
     GREENSKEEPER.AskQuestionForm();
     GREENSKEEPER.scrollToTop();
     GREENSKEEPER.accordion();
