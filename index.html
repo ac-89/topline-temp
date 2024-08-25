@@ -4,8 +4,18 @@
     <!-- Basic Page Needs
   ================================================== -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="Topline Paving and Landscapes - Paving | Decking | Landscaping | Fencing |"
+    />
+    <meta
+      name="keywords"
+      content="Topline Paving and Landscapes - Paving | Decking | Landscaping | Fencing |"
+    />
+    <meta name="author" content="Topline Paving and Landscapes" />
     <title>
       Topline Paving and Landscapes - Paving | Decking | Landscaping | Fencing |
+      Porcelain | Tile | Stone | Brick |
     </title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -14,7 +24,7 @@
   ================================================== -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- CSS
@@ -40,7 +50,7 @@
     <!--[if lte IE 9
       ]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"
     /><![endif]-->
-    <!-- <link href="css/custom.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
     <!-- CUSTOM STYLESHEET FOR STYLING -->
     <!-- Color Style -->
     <link href="colors/color1.css" rel="stylesheet" type="text/css" />
@@ -73,7 +83,11 @@
               /></a>
             </div>
             <div class="site-tagline">Paving &amp; Landscaping Services</div>
-            <a href="#" class="btn btn-defau lt btn-sm" id="contact-info"
+            <a
+              href="#"
+              class="btn btn-defau lt btn-sm"
+              id="contact-info"
+              aria-label="Contact Us"
               ><i class="fa fa-bars"></i
             ></a>
             <div class="site-header-right">
@@ -255,7 +269,7 @@
                         craftsmanship and attention to detail. Our comprehensive
                         services cover everything from designing and installing
                         driveways, patios, and pathways, to fencing, brickwork,
-                        and lawn care.
+                        porcelain, and lawn care.
                       </p>
                     </div>
                     <div class="main-box">
@@ -376,10 +390,10 @@
                         <h4>Patios, Slabs and Natural Stone Products</h4>
                         <p>
                           Enjoy outdoor living at its finest with our
-                          beautifully crafted patios and premium slabs and
-                          natural stone products. Whether you’re looking to
-                          relax, entertain, or simply elevate your outdoor
-                          space, our designs offer timeless beauty and
+                          beautifully crafted patios and premium slabs,
+                          porcelain, and natural stone products. Whether you’re
+                          looking to relax, entertain, or simply elevate your
+                          outdoor space, our designs offer timeless beauty and
                           durability tailored to your taste.
                         </p>
                       </div>
@@ -756,7 +770,7 @@
                   >
                     <div class="row">
                       <div class="col-md-6 col-sm-6">
-                        <label>Your Name (required)</label>
+                        <label for="service-name">Your Name (required)</label>
                         <input
                           type="text"
                           name="service-name"
@@ -765,7 +779,7 @@
                         />
                       </div>
                       <div class="col-md-6 col-sm-6">
-                        <label>Your Email</label>
+                        <label for="service-email">Your Email</label>
                         <input
                           type="email"
                           name="service-email"
@@ -776,7 +790,7 @@
                     </div>
                     <div class="row">
                       <div class="col-md-6 col-sm-6">
-                        <label>Your Phone (required)</label>
+                        <label for="service-phone">Your Phone (required)</label>
                         <input
                           type="text"
                           name="service-phone"
@@ -785,7 +799,9 @@
                         />
                       </div>
                       <div class="col-md-6 col-sm-6">
-                        <label>Your Address (required)</label>
+                        <label for="service-address"
+                          >Your Address (required)</label
+                        >
                         <input
                           type="text"
                           name="service-address"
@@ -815,7 +831,7 @@
                                       <option>Tree, Shrub, Turf</option>
                                       <option>Gutter Cleaning</option>
                                   </select> -->
-                        <label>Details</label>
+                        <label for="service-comments">Details</label>
                         <textarea
                           name="service-comments"
                           id="service-comments"
@@ -897,12 +913,14 @@
                   <i class="fa fa-navicon"></i> Quick Links
                 </h4>
                 <nav role="menu">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Book a Service</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                  <ul role="menu-list">
+                    <li role="menu-item"><a href="index.html">Home</a></li>
+                    <li role="menu-item"><a href="#about">About</a></li>
+                    <li role="menu-item">
+                      <a href="#contact">Book a Service</a>
+                    </li>
+                    <li role="menu-item"><a href="#services">Services</a></li>
+                    <li role="menu-item"><a href="#contact">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -1056,21 +1074,30 @@
     <!-- UI Plugins -->
     <script src="js/helper-plugins.js"></script>
     <!-- Helper Plugins -->
-    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script
+      async
+      rel="preload"
+      src="vendor/owl-carousel/js/owl.carousel.min.js"
+    ></script>
     <!-- Owl Carousel -->
     <script src="js/bootstrap.js"></script>
     <!-- UI -->
-    <script src="js/init.js" type="text/javascript"></script>
+    <script
+      async
+      rel="preload"
+      src="js/init.js"
+      type="text/javascript"
+    ></script>
     <!-- All Scripts -->
     <script src="vendor/flexslider/js/jquery.flexslider.js"></script>
     <!-- FlexSlider -->
-    <!-- <script
+    <script
       async
       defer
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
       nonce="J7S25LGN"
       rel="preload"
-    ></script> -->
+    ></script>
   </body>
 </html>

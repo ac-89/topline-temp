@@ -1,0 +1,7 @@
+.site-footer > .container > .row > div > .widget {
+  color: #fff !important;
+}
+
+.widget > nav > ul > li > a {
+  color: #fff !important;
+}
