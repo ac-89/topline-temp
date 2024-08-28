@@ -24,3 +24,15 @@
         justify-content: center;
       }
 }
+
+@media only screen and (max-width: 768px){
+  .quick-quote .row > *{
+    width:50%;
+  }
+  .quick-quote .row a{
+    width: 100%;
+  }
+  .quote-head-btn{
+    margin-left:0;
+  }
+}
