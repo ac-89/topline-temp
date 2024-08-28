@@ -5,3 +5,22 @@
 .widget > nav > ul > li > a {
   color: #fff !important;
 }
+
+@media only screen and (max-width: 992px) {
+    .main-navigation .quote-head-btn, .main-navigation .social-icons {
+        display: none;
+      }
+      .main-box{
+        flex-direction: column!important;
+      }
+      .quote-teaser-title::before{
+        right: -150px
+      }
+      .quote-teaser h3 {
+        text-align: center;
+      }
+      form.quick-quote .row{
+        display: flex;
+        justify-content: center;
+      }
+}
